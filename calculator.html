@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      body{
+         background-color: #000000;
+         display: grid;
+         height: 100vh;
+         place-items: center; 
+      }
+      .main{
+         width: 300px;
+         height: 300px;
+         background-color: rgb(198, 190, 190);
+         position: absolute;
+         border: 5px solid black;
+      }
+      .main input[type='text'] {
+         width: 70%;
+         position: relative;
+         height: 50px;
+         top: 5px;
+         text-align: right;
+         padding: 3px 6px;
+         outline: none;
+         font-size: 40px;
+         border: 2px solid black;
+         display: flex;
+         margin: auto;
+         border-radius: 6px;
+         color: whitesmoke;
+      }
+      .btn{
+         text-align: center;
+      }
+      .text{
+        background-color: rgba(26, 25, 25, 0.827); 
+        color:whitesmoke
+      }
+      .result{
+        color: burlywood;
+      }
+   </style>
+   <title>Calulator</title>
+</head>
+<body>
+    <h1 id="title" style="color: aliceblue;">Welcome to my first calc</h1>
+ <p id="description">code bu yokesh</p>
+    <div class="main">
+      <input type="text" id = 'result' class="text">
+      <br>
+      <div class="btn" >
+         <button id="clear" value="C" onclick="myFunction()" style="width:15%; height: 40px;">Clear</button>
+         <button id="mod" value = '%' onclick = "Solve('%')" style="width:15%; height: 40px;">%</button>
+         <button id="back" value = '←' onclick ="Back('←')" style="width:15%; height: 40px;">←</button>
+         <button id="div" value = '/' onclick = "Solve('/')" style="width:15%; height: 40px;">/</button>
+         <br>
+         <button id="7" value = '7' onclick = "Solve('7')" style="width:15%; height: 40px;">7</button>
+         <button id="8" value = '8' onclick = "Solve('8')" style="width:15%; height: 40px;">8</button>
+         <button id="9" value = '9' onclick = "Solve('9')" style="width:15%; height: 40px;">9</button>
+         <button id="mul" value = 'x' onclick = "Solve('*')" style="width:15%; height: 40px;">*</button>
+         <br>
+         <button id="4" value = '4' onclick = "Solve('4')" style="width:15%; height: 40px;">4</button>
+         <button id="5" value = '5' onclick = "Solve('5')" style="width:15%; height: 40px;">5</button>
+         <button id="6" value = '6' onclick = "Solve('6')" style="width:15%; height: 40px;">6</button>
+         <button id="subtract" value = '-' onclick = "Solve('-')" style="width:15%; height: 40px;">-</button>
+         <br>
+         <button id="1"   value = '1' onclick = "Solve('1')" style="width:15%; height: 40px;">1</button>
+         <button id="2"   value = '2' onclick = "Solve('2')" style="width:15%; height: 40px;">2</button>
+         <button id="3"   value = '3' onclick = "Solve('3')" style="width:15%; height: 40px;">3</button>
+         <button id="add" value = '+' onclick = "Solve('+')" style="width:15%; height: 40px;">+</button>
+         <br>
+         <button id="00"    value = '00'onclick = "Solve('00')" style="width:15%; height: 40px;">00</button>
+         <button id="0"     value = '0' onclick = "Solve('0')" style="width:15%; height: 40px;">0</button>
+         <button id="point" value = '.' onclick = "Solve('.')" style="width:15%; height: 40px;">.</button>
+         <button id="equal" value = '=' onclick = "Result()" style="width:15%; height: 40px;">=</button>
+      </div>
+   </div>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+<script src="calculator.js"></script>
+</body>
+</html>
